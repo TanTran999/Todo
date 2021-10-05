@@ -45,7 +45,8 @@ class _ListTaskScreenState extends State<ListTaskScreen> {
         title: GestureDetector(
           onTap: () async {
             await _auth.signOut();
-            Navigator.pushNamed(context, "/");
+            //Navigator.pushNamed(context, "/");
+            Navigator.pop(context);
           },
           child: Text(
             email,
